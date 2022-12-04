@@ -10,7 +10,7 @@ from pathlib import Path
 url = "https://skyscanner44.p.rapidapi.com/search-extended"
 api_key = dotenv.dotenv_values()['RAPIDAPI_SKYSCANNER_KEY']
 
-def main(origin, dest, start_date, return_date=None, out_dir=None):
+def query_sky_api(origin, dest, start_date, return_date=None, out_dir=None):
     start_date, return_date = parse_dates(start_date, return_date)
     querystring = {
         "adults":"1",
@@ -56,4 +56,4 @@ if __name__ == "__main__":
     parser.add_argument("--return_date", type=str, default=None)
     parser.add_argument("--out_dir", type=str, default=None)
     args = parser.parse_args()
-    main(**vars(args))
+    query_sky_api(**vars(args))

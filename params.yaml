@@ -1,0 +1,12 @@
+# Location - IATA codes
+from: LOND
+to: SVQ
+
+# Dates
+start_date_first: 2022-12-21
+start_date_last: 2022-12-23
+end_date_first: 2023-01-02
+end_date_last: 2023-01-08
+
+# Optional: where should JSON files be stored?
+json_dir: data

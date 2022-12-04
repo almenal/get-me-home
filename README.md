@@ -56,7 +56,7 @@ RAPIDAPI_SKYSCANNER_KEY=<your_api_key>
 ```
 
 ## 🎈 Usage <a name="usage"></a>
-Once you have all the packages and a API Key in your `.env` file, you need to edit `params.yaml` to specify the parameters of your search:
+Once you have all the packages and a API Key in your `.env` file, you need to edit `params.yaml` to specify the parameters of your search. The file provided has as an example a query I used to get home for Christmas.
 
 First specify the locations:
 - `from`: the IATA code of the airport you're leaving from
@@ -66,16 +66,17 @@ Then the dates:
 - The range of starting dates must be specified in the `start_date_first` and `start_date_last` fields, respectively
 - For the return dates, the same applies, but the fields are `end_date_first` and `end_date_last`
 
-Optional parameters:
-- You can specify the location where JSON files are stored in the `json_dir` field
-
-The file provided  has as an example a query I used to get home for Christmas.
-
 Then run from the terminal
 
 ```shell
 bash get_me_home.sh
 ```
+
+The results will be stored in a CSV file in the `out` folder called `flights_XX.csv` (depending on how many files are there already).
+
+Optional parameters:
+- You can specify the location where JSON files are stored in the `json_dir` field
+
 
 The script will check all combinations, query the Skycanner API to get all possible flights for that combination of flights and store the results in JSON files.
 An R script then parses all JSON files and exports the merged info in an Excel file sorted by price in ascending order.

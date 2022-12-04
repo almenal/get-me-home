@@ -135,6 +135,7 @@ pivot_flights_wider <- function(flights_df_long) {
 }
 
 export_flights <- function(tbl) {
+    dir.create(here("out"), showWarnings = FALSE)
     n_tables  <- length(list.files(here("out")))
     fname <- here(
         "out",

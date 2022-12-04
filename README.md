@@ -35,7 +35,7 @@ This tool automates querying the Skyscanner API and displays all the information
 ### Installing dependencies
 For the python dependencies, run from the terminal:
 ```shell
-pip install requests python-dotenv
+pip install requests python-dotenv python-dateutil pyyaml
 ```
 
 For the R ones, start an R session and run

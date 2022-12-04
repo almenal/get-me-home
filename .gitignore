@@ -3,3 +3,6 @@ data*/
 sky_api/
 .DS_Store
 .lintr
+**.png
+**.svg
+out/

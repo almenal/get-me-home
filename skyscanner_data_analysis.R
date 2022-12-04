@@ -37,10 +37,8 @@ main <- function() {
 # Functions -------------------------------------
 
 parse_arguments <- function() {
-    args <- commandArgs(trailingOnly = TRUE)[[1]]
-    if (length(args) == 0) stop("Must provide one argument: `data_location`")
-    if (length(args) > 1) warning("Using first argument, ignoring the rest")
-    return(args[[1]])
+    params <- yaml::read_yaml("params.yaml")
+    return(params$json_dir)
 }
 
 read_json_files <- function(data_location) {

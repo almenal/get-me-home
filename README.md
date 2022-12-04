@@ -41,6 +41,7 @@ pip install requests python-dotenv python-dateutil pyyaml
 For the R ones, start an R session and run
 ```R
 install.packages("tidyverse")
+install.packages("yaml")
 ```
 
 ### Sign up to RapidAPI and set up API Key

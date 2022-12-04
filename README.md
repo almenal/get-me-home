@@ -69,10 +69,7 @@ Then the dates:
 Optional parameters:
 - You can specify the location where JSON files are stored in the `json_dir` field
 
-- Change the beginning of the `get_me_home.sh` file to select the dates you want to check.
-Shown is an example I used to get home for Christmas. 
-  - The start dates are determined by the prefix `2022-12` and an array with days (21, 22, 23).
-  - Similarly, the return dates are all in `2023-01`: from the 2nd to the 8th.
+The file provided  has as an example a query I used to get home for Christmas.
 
 Then run from the terminal
 

@@ -48,8 +48,11 @@ install.packages("tidyverse")
 - Sign up by creating an account or using OAuth
 - Head to the [3B Data SkyScanner API](https://rapidapi.com/3b-data-3b-data-default/api/skyscanner44/pricing) and subscribe (free tier is enough)
 - Now go to the ['Endpoints' tab](https://rapidapi.com/3b-data-3b-data-default/api/skyscanner44) and copy the default value of the `X-RapidAPI-Key`
-- Open the `.env` file and change the value of the `RAPIDAPI_SKYSCANNER_KEY` field to the value you just copied
-- You're all set!
+- Create a `.env` file and copy the following line changing the value of the `RAPIDAPI_SKYSCANNER_KEY` field to the value you just copied
+
+```.env
+RAPIDAPI_SKYSCANNER_KEY=<your_api_key>
+```
 
 ## 🎈 Usage <a name="usage"></a>
 Once you have all the packages and a API Key in your `.env` file:

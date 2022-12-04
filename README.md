@@ -56,7 +56,18 @@ RAPIDAPI_SKYSCANNER_KEY=<your_api_key>
 ```
 
 ## 🎈 Usage <a name="usage"></a>
-Once you have all the packages and a API Key in your `.env` file:
+Once you have all the packages and a API Key in your `.env` file, you need to edit `params.yaml` to specify the parameters of your search:
+
+First specify the locations:
+- `from`: the IATA code of the airport you're leaving from
+- `to`: the IATA code of the airport you're travelling to
+
+Then the dates:
+- The range of starting dates must be specified in the `start_date_first` and `start_date_last` fields, respectively
+- For the return dates, the same applies, but the fields are `end_date_first` and `end_date_last`
+
+Optional parameters:
+- You can specify the location where JSON files are stored in the `json_dir` field
 
 - Change the beginning of the `get_me_home.sh` file to select the dates you want to check.
 Shown is an example I used to get home for Christmas. 
